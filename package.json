@@ -1,6 +1,6 @@
 {
     "name": "slog-human",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "scripts": {
         "prepare": "husky install"
     },
