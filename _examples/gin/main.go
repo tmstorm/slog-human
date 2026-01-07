@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	logger "github.com/tmstorm/slog-human"
-	"github.com/tmstorm/slog-human/middleware"
+	middleware "github.com/tmstorm/slog-human/middleware/gin"
 
 	"github.com/gin-contrib/requestid"
 	"github.com/gin-gonic/gin"
