@@ -1,6 +1,6 @@
-module github.com/tmstorm/middleware/gin
+module github.com/tmstorm/slog-human/middleware/gin
 
-go 1.25.5
+go 1.24
 
 require (
 	github.com/gin-contrib/requestid v1.0.5
