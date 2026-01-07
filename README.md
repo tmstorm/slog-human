@@ -1,3 +1,7 @@
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/tmstorm/slog-human)
+[![Go Reference](https://pkg.go.dev/badge/github.com/tmstorm/slog-human.svg)](https://pkg.go.dev/github.com/tmstorm/slog-human)
+[![Go Report Card](https://goreportcard.com/badge/github.com/tmstorm/slog-human)](https://goreportcard.com/report/github.com/tmstorm/slog-human)
+[![CI Pipeline](https://github.com/tmstorm/slog-human/actions/workflows/ci.yaml/badge.svg)](https://github.com/tmstorm/slog-human/actions/workflows/ci.yaml)
 # slog-human
 
 **Pretty, human-readable structured logging for Go's standard lib `log/slog`.**
