@@ -1,0 +1,42 @@
+name: CI Pipeline
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  test:
+    name: Run Tests (Go ${{ matrix.go }})
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        go: [1.24, 1.25]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ matrix.go }}
+
+      - name: Vet code
+        run: go vet ./...
+
+      - name: Run tests with race detector
+        run: go test -v -race ./... | tee test-report.txt
+
+      - name: Upload test summary
+        if: always()
+        run: |
+          echo "## Test Output (Go ${{ matrix.go }})" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          cat test-report.txt >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
