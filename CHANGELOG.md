@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.3](https://github.com/tmstorm/slog-human/compare/v1.0.2...v1.0.3) (2026-01-07)
+
+
+### 🐛 Bug Fixes
+
+* examples ([bf5825d](https://github.com/tmstorm/slog-human/commit/bf5825de485c5801fa981b766bf5c1b66a8522c0))
+
+
+### 📝 Documentation
+
+* update README.md ([60bb431](https://github.com/tmstorm/slog-human/commit/60bb431b43db123b00870e9ef94a243e000bae50))
+
 ## [1.0.2](https://github.com/tmstorm/slog-human/compare/v1.0.1...v1.0.2) (2026-01-07)
 
 
